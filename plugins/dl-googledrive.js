@@ -7,14 +7,14 @@ lite({
   react: '📥',
   desc: "Download files from Google Drive.",
   category: "download",
-  use: ".gdrive <Google Drive URL>",
+  use: "!gdrive <Google Drive URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args }) => {
   try {
     // Check if the user provided a Google Drive URL
     const gdriveUrl = args[0];
     if (!gdriveUrl || !gdriveUrl.includes("drive.google.com")) {
-      return reply('Please provide a valid Google Drive URL. Example: `.gdrive https://drive.google.com/...`');
+      return reply('Please provide a valid Google Drive URL. Example: `!gdrive https://drive.google.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -55,17 +55,17 @@ lite({
       // Send as image
       await conn.sendMessage(from, {
         image: fileBuffer,
-        caption: `📥 *ғɪʟᴇ ᴅᴇᴛᴀɪʟs* 📥\n\n` +
-          `🔖 *Nᴀᴍᴇ*: ${fileName}\n` +
-          `📏 *Sɪᴢᴇ*: ${fileSize}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+        caption: `📥 *File Details* 📥\n\n` +
+          `🔖 *Name*: ${fileName}\n` +
+          `📏 *Size*: ${fileSize}\n\n` +
+          `> © Powered By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 ✦sᴜʜᴏ ᴍᴅ✦ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
@@ -74,17 +74,17 @@ lite({
       // Send as video
       await conn.sendMessage(from, {
         video: fileBuffer,
-        caption: `📥 *ғɪʟᴇ ᴅᴇᴛᴀɪʟs* 📥\n\n` +
-          `🔖 *Nᴀᴍᴇ*: ${fileName}\n` +
-          `📏 *Sɪᴢᴇ*: ${fileSize}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+        caption: `📥 *File Details* 📥\n\n` +
+          `🔖 *Name*: ${fileName}\n` +
+          `📏 *Size*: ${fileSize}\n\n` +
+          `> © Powered By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
@@ -95,17 +95,17 @@ lite({
         document: fileBuffer,
         mimetype: mimetype,
         fileName: fileName,
-        caption: `📥 *ғɪʟᴇ ᴅᴇᴛᴀɪʟs* 📥\n\n` +
-          `🔖 *Nᴀᴍᴇ*: ${fileName}\n` +
-          `📏 *Sɪᴢᴇ*: ${fileSize}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+        caption: `📥 *File Details* 📥\n\n` +
+          `🔖 *Name*: ${fileName}\n` +
+          `📏 *Size*: ${fileSize}\n\n` +
+          `> © Powerd By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
