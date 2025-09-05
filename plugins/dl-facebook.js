@@ -25,7 +25,7 @@ lite({
 
     const fbData = await facebook(q);
     
-    const caption = `╭━━━〔 *sᴜʜᴏ-ᴍᴅ ғʙ ᴅʟ* 〕━━━⊷\n`
+    const caption = `╭━━━〔 *Nexus Fb Downloader* 〕━━━⊷\n`
       + `┃▸ *Dᴜʀᴀᴛɪᴏɴ*: ${fbData.result.duration}\n`
       + `╰━━━⪼\n\n`
       + `🌐 *Download Options:*\n`
