@@ -1,5 +1,5 @@
 const { lite } = require('../lite');
-const { getAnti, setAnti } = require('../plugins/antidelete'); // import database logic
+const { getAnti, setAnti } = require('../plugins/anti-delete'); // import database logic
 
 // Command definition
 lite({
