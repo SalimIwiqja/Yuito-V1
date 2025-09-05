@@ -7,14 +7,14 @@ lite({
   react: '📥',
   desc: "Download files from MediaFire.",
   category: "download",
-  use: ".mediafire <MediaFire URL>",
+  use: "!mediafire <MediaFire URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args }) => {
   try {
     // Check if the user provided a MediaFire URL
     const mediafireUrl = args[0];
     if (!mediafireUrl || !mediafireUrl.includes("mediafire.com")) {
-      return reply('Please provide a valid MediaFire URL. Example: `.mediafire https://mediafire.com/...`');
+      return reply('Please provide a valid MediaFire URL. Example: `!mediafire https://mediafire.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -54,14 +54,14 @@ lite({
         caption: `📥 *File Details*\n\n` +
           `🔖 *Name*: ${filename}\n` +
           `📏 *Size*: ${size}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+          `> © Powerd By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
@@ -73,14 +73,14 @@ lite({
         caption: `📥 *File Details*\n\n` +
           `🔖 *Name*: ${filename}\n` +
           `📏 *Size*: ${size}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+          `> © Powerd By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
@@ -94,14 +94,14 @@ lite({
         caption: `📥 *File Details*\n\n` +
           `🔖 *Name*: ${filename}\n` +
           `📏 *Size*: ${size}\n\n` +
-          `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+          `> © Powerd By Nexus`,
         contextInfo: {
           mentionedJid: [m.sender],
           forwardingScore: 999,
           isForwarded: true,
           forwardedNewsletterMessageInfo: {
             newsletterJid: '120363402507750390@newsletter',
-            newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+            newsletterName: '『 Nexus Inc 』',
             serverMessageId: 143
           }
         }
@@ -128,13 +128,13 @@ lite({
   react: '📂',
   desc: "Download files from MediaFire using Keith's API.",
   category: "download",
-  use: ".mediafire2 <MediaFire URL>",
+  use: "!mediafire2 <MediaFire URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args, q }) => {
   try {
     // Check if the user provided a URL
     if (!q) {
-      return reply('Please provide a MediaFire URL. Example: `.mediafire https://www.mediafire.com/...`');
+      return reply('Please provide a MediaFire URL. Example: `!mediafire https://www.mediafire.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -175,7 +175,7 @@ lite({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+          newsletterName: '『 Nexus Inc 』',
           serverMessageId: 143
         }
       }
