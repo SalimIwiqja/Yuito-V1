@@ -22,7 +22,7 @@ lite({
         return reply("❌ This command is only for the bot owner.");
     }
 
-    if (!text) return reply("❌ Usage: .addcoins <number> <amount>\nExample: .addcoins 27831234567 5000");
+    if (!text) return reply("❌ Usage: !addcoins <number> <amount>\nExample: .addcoins 27831234567 5000");
 
     const args = text.split(" ");
     if (args.length < 2) return reply("❌ Please provide a number and an amount.");
