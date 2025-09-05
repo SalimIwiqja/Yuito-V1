@@ -12,7 +12,7 @@ lite({
 }, async (conn, mek, m, { args, reply }) => {
   try {
     if (args.length < 2) {
-      return reply("Please mention two users to calculate compatibility.\nUsage: `.compatibility @user1 @user2`");
+      return reply("Please mention two users to calculate compatibility.\nUsage: `!compatibility @user1 @user2`");
     }
 
     let user1 = m.mentionedJid[0]; 
