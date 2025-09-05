@@ -7,13 +7,13 @@ lite({
   alias: ["youtubestalk", "ytsearch"],
   desc: "Get information about a YouTube channel, including their profile picture, stats, and latest videos.",
   category: "other",
-  use: ".ytstalk <username>",
+  use: "!ytstalk <username>",
   filename: __filename,
 }, async (conn, mek, msg, { from, args, reply }) => {
   try {
     const username = args.join(" ");
     if (!username) {
-      return reply("❌ Please provide a YouTube username. Example: `.ytstalk malvintech2 `");
+      return reply("❌ Please provide a YouTube username. Example: `!ytstalk david laid `");
     }
 
     // Fetch YouTube channel information from the API
