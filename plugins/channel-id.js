@@ -29,14 +29,14 @@ lite({
       return reply("❌ *Channel not found or inaccessible.*");
 
     const infoText = `
-╭─❍『 📡 ᴄʜᴀɴɴᴇʟ ɪɴꜰᴏ 』❍─
+╭─❍『 📡 Channel Info 』❍─
 │
 │ 🔖 *ID:* ${metadata.id}
 │ 🗂️ *Name:* ${metadata.name}
 │ 👥 *Followers:* ${metadata.subscribers?.toLocaleString() || "N/A"}
 │ 🗓️ *Created:* ${metadata.creation_time ? new Date(metadata.creation_time * 1000).toLocaleString("id-ID") : "Unknown"}
 │
-╰─⭓ ᴘᴏᴡᴇʀᴇᴅ ʙʏ *sᴜʜᴏ xᴅ*
+╰─⭓ Powered by *© Nexus Inc*
 `;
 
     if (metadata.preview) {
