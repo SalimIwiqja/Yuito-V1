@@ -14,7 +14,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const start = new Date().getTime();
 
         const reactionEmojis = ['⚔️', '👁️', '🔥', '⚡', '🚀', '💨', '🔱', '🌑', '🩸', '✨'];
-        const textEmojis = ['💎', '⚔️', '👁️', '🌑', '🚀', '🩸', '🔱', '🔥', '⚡️', '🌌'];
+        const textEmojis = ['♥️', '⚔️', '👁️', '🌑', '🚀', '🩸', '🔱', '🔥', '⚡️', '🌌'];
 
         const reactionEmoji = reactionEmojis[Math.floor(Math.random() * reactionEmojis.length)];
         let textEmoji = textEmojis[Math.floor(Math.random() * textEmojis.length)];
@@ -33,7 +33,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
         const responseTime = (end - start) / 1000;
 
         const text = `╭━━〔 ⚡ *SYSTEM RESPONSE* ⚡ 〕━━⬣
-┃ 🕐 *Shadow Speed:* ${responseTime.toFixed(2)}s ${reactionEmoji}
+┃ 🕐 *Speed:* ${responseTime.toFixed(2)}s ${reactionEmoji}
 ┃ 📡 *Status:* Stable
 ╰━━━━━━━━━━━━━━⬣`;
 
@@ -45,7 +45,7 @@ async (conn, mek, m, { from, quoted, sender, reply }) => {
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363402507750390@newsletter',
-                    newsletterName: "ᴍʀ sᴜɴɢ",
+                    newsletterName: "Nexus Inc",
                     serverMessageId: 143
                 }
             }
