@@ -8,7 +8,7 @@ lite({
     alias: ["revokegrouplink","resetglink","revokelink","f_revoke"],
     desc: "To Reset the group link",
     category: "group",
-    use: '.revoke',
+    use: '!revoke',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
