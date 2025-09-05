@@ -13,7 +13,7 @@ lite({
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator ,isDev, isAdmins, reply}) => {
 try{
-const msr = (await fetchJson('https://raw.githubusercontent.com/SalimIwiqja/Yuito-V1/refs/heads/main/data/myreplies.json?token=GHSAT0AAAAAADJ6KSYGTTG7V4N2NNSVTI4K2F3HCFA')).replyMsg
+const msr = (await fetchJson('https://raw.githubusercontent.com/SalimIwiqja/MALVIN-BXD/refs/heads/main/myreplies.json')).replyMsg
 
 if (!isGroup) return reply(msr.only_gp)
 if (!isAdmins) { if (!isDev) return reply(msr.you_adm),{quoted:mek }} 
