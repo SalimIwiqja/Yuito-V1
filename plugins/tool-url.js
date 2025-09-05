@@ -11,7 +11,7 @@ lite({
   'react': '🖇',
   'desc': "Convert media to Catbox URL",
   'category': "utility",
-  'use': ".tourl [reply to media]",
+  'use': "!tourl [reply to media]",
   'filename': __filename
 }, async (client, message, args, { reply }) => {
   try {
