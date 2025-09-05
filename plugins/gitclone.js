@@ -15,7 +15,7 @@ lite({
   reply
 }) => {
   if (!args[0]) {
-    return reply("❌ Where is the GitHub link?\n\nExample:\n.gitclone https://github.com/username/repository");
+    return reply("❌ Where is the GitHub link?\n\nExample:\n!gitclone https://github.com/username/repository");
   }
 
   if (!/^(https:\/\/)?github\.com\/.+/.test(args[0])) {
@@ -43,7 +43,7 @@ lite({
     const fileName = contentDisposition ? contentDisposition.match(/filename=(.*)/)[1] : `${repo}.zip`;
 
     // Notify user of the download
-    reply(`📥 *Downloading repository...*\n\n*Repository:* ${username}/${repo}\n*Filename:* ${fileName}\n\n> *Powered by Mr Sung*`);
+    reply(`📥 *Downloading repository...*\n\n*Repository:* ${username}/${repo}\n*Filename:* ${fileName}\n\n> *Powered by Nexus*`);
 
     // Send the zip file to the user with custom contextInfo
     await conn.sendMessage(from, {
@@ -56,7 +56,7 @@ lite({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: 'Suho MD',
+          newsletterName: 'Nexus Inc',
           serverMessageId: 143
         }
       }
