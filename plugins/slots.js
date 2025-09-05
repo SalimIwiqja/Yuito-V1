@@ -9,13 +9,13 @@ const dataFile = './data/economy.json';
 lite({
     pattern: "slots",
     alias: ["slotmachine"],
-    desc: "Play the slot machine and try your luck! Usage: .slots <amount>",
+    desc: "Play the slot machine and try your luck! Usage: !slots <amount>",
     category: "economy",
     react: "🎰",
     filename: __filename
 }, async (conn, mek, m, { from, text, reply }) => {
 
-    if (!text) return reply("❌ Please enter an amount to bet. Example: .slots 500");
+    if (!text) return reply("❌ Please enter an amount to bet. Example: !slots 500");
 
     let bet = parseInt(text.trim());
     if (isNaN(bet) || bet <= 0) return reply("❌ Invalid amount.");
