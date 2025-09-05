@@ -7,14 +7,14 @@ lite({
   react: '📥',
   desc: "Download TikTok videos.",
   category: "download",
-  use: ".tiktok <TikTok video URL>",
+  use: "!tiktok <TikTok video URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args }) => {
   try {
     // Check if the user provided a TikTok video URL
     const tiktokUrl = args[0];
     if (!tiktokUrl || !tiktokUrl.includes("tiktok.com")) {
-      return reply('Please provide a valid TikTok video URL. Example: `.tiktok https://tiktok.com/...`');
+      return reply('Please provide a valid TikTok video URL. Example: `!tiktok https://tiktok.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -49,21 +49,21 @@ lite({
     // Send the video with details
     await conn.sendMessage(from, {
       video: videoBuffer,
-      caption: `📥 *ᴛɪᴋᴛᴏᴋ Vɪᴅᴇᴏ ᴅʟ*\n\n` +
-        `🔖 *Tɪᴛʟᴇ*: ${title || "No title"}\n` +
-        `👤 *Aᴜᴛʜᴏʀ*: @${author.username} (${author.nickname})\n` +
-        `❤️ *Lɪᴋᴇs*: ${metrics.digg_count}\n` +
-        `💬 *Cᴏᴍᴍᴇɴᴛs*: ${metrics.comment_count}\n` +
-        `🔁 *Sʜᴀʀᴇs*: ${metrics.share_count}\n` +
-        `📥 *Doᴡɴʟᴏᴀᴅs*: ${metrics.download_count}\n\n` +
-        `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+      caption: `📥 *Tiktok Video Downloader*\n\n` +
+        `🔖 *Title*: ${title || "No title"}\n` +
+        `👤 *Autor*: @${author.username} (${author.nickname})\n` +
+        `❤️ *Likes*: ${metrics.digg_count}\n` +
+        `💬 *Comments*: ${metrics.comment_count}\n` +
+        `🔁 *Shares*: ${metrics.share_count}\n` +
+        `📥 *Downloads*: ${metrics.download_count}\n\n` +
+        `> © Powerd By Nexus`,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+          newsletterName: '『 Nexus Inc 』',
           serverMessageId: 143
         }
       }
