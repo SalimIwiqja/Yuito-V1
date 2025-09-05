@@ -59,9 +59,8 @@ module.exports = {
 
 🌟 *Arigato for Choosing Nexus!* 🌟
 
-*© Nexus -*
-
-    // add alive msg here 
+*© Nexus -*`,
+// add alive msg here 
 
     STICKER_NAME: process.env.STICKER_NAME || "© Nexus",
     // type sticker pack name 
