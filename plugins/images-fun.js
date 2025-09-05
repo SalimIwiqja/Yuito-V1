@@ -14,7 +14,7 @@ lite({
     react: '😎',
     desc: "Download anime loli images.",
     category: "anime",
-    use: '.loli',
+    use: '!loli',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -23,7 +23,7 @@ try{
 let res = await axios.get('https://api.lolicon.app/setu/v2?num=1&r18=0&tag=lolicon')
 let wm = `😎 Random Garl image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`
+© Powerd By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.data[0].urls.original }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -38,7 +38,7 @@ lite({
     react: '💫',
     desc: "Download anime waifu images.",
     category: "anime",
-    use: '.waifu',
+    use: '!waifu',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -46,7 +46,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/waifu')
 let wm = `🩵 Random Waifu image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`
+© Powered By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -61,7 +61,7 @@ lite({
     react: '💫',
     desc: "Download anime neko images.",
     category: "anime",
-    use: '.neko',
+    use: '!neko',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -69,7 +69,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/neko')
 let wm = `🩷 Random neko image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`
+© Powerd By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.url  }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -84,7 +84,7 @@ lite({
     react: '💕',
     desc: "Download anime megumin images.",
     category: "anime",
-    use: '.megumin',
+    use: '!megumin',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -92,7 +92,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/megumin')
 let wm = `❤️‍🔥Random megumin image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`
+© Powerd By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -107,7 +107,7 @@ lite({
     react: '💫',
     desc: "Download anime maid images.",
     category: "anime",
-    use: '.maid',
+    use: '!maid',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -115,7 +115,7 @@ try{
 let res = await axios.get('https://api.waifu.im/search/?included_tags=maid')
 let wm = `😎 Random maid image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴʜ`
+© Powerd By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.images[0].url  }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -130,7 +130,7 @@ lite({
     react: '😎',
     desc: "Download anime awoo images.",
     category: "anime",
-    use: '.awoo',
+    use: '!awoo',
     filename: __filename
 },
 async(conn, mek, m,{from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply}) => {
@@ -138,7 +138,7 @@ try{
 let res = await axios.get('https://api.waifu.pics/sfw/awoo')
 let wm = `😎 Random awoo image
 
-©ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`
+© Powerd By Nexus`
 await conn.sendMessage(from, { image: { url: res.data.url }, caption: wm}, { quoted: mek })
 } catch (e) {
 reply(cants)
@@ -159,7 +159,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: '*ANIME GIRL IMAGE* 🥳\n\n\n *> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`*' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: '*ANIME GIRL IMAGE* 🥳\n\n\n *> © Powerd By Nexus`*' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -179,7 +179,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © Powerd By Nexus' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -199,7 +199,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © Powerd By Nexus' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -219,7 +219,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © Powerd By Nexus' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -239,7 +239,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © Powerd By Nexus' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -259,7 +259,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.url }, caption: 'ANIME GIRL IMAGE 👾\n\n\n > © Powerd By Nexus' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`*Error Fetching Anime Girl image*: ${e.message}`);
@@ -279,7 +279,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const response = await axios.get(apiUrl);
         const data = response.data;
 
-        await conn.sendMessage(from, { image: { url: data.message }, caption: '> *© ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ ' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data.message }, caption: '> *© Powerd By Nexus ' }, { quoted: mek });
     } catch (e) {
         console.log(e); // ❯❯ Powered by MALVIN XD 👑
         reply(`єяяσя ƒєт¢нιηg ∂σg ιмαgє: ${e.message}`);
@@ -301,7 +301,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
         const data = response.data;
 
         // Send the cat image with a caption
-        await conn.sendMessage(from, { image: { url: data[0].url }, caption: ' DOWNLOAD CAT 🐈 PICS\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ*' }, { quoted: mek });
+        await conn.sendMessage(from, { image: { url: data[0].url }, caption: ' DOWNLOAD CAT 🐈 PICS\n\n> *Powerd By Nexus*' }, { quoted: mek });
     } catch (e) {
         console.log(e);
         reply(`Error Fetching Cat Image 🤕: ${e.message}`);
