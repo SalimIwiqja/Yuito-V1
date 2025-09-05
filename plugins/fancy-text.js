@@ -11,7 +11,7 @@ lite({
 }, async (conn, m, store, { from, quoted, args, q, reply }) => {
   try {
     if (!q) {
-      return reply("❎ Please provide text to convert into fancy fonts.\n\n*Example:* .fancy Hello");
+      return reply("❎ Please provide text to convert into fancy fonts.\n\n*Example:* !fancy Hello");
     }
 
     const apiUrl = `https://www.dark-yasiya-api.site/other/font?text=${encodeURIComponent(q)}`;
@@ -22,7 +22,7 @@ lite({
     }
 
     const fonts = response.data.result.map(item => `*${item.name}:*\n${item.result}`).join("\n\n");
-    const resultText = `✨ *Fancy Fonts Converter* ✨\n\n${fonts}\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ*`;
+    const resultText = `✨ *Fancy Fonts Converter* ✨\n\n${fonts}\n\n> *Powerd By Nexus*`;
 
     await conn.sendMessage(from, { text: resultText }, { quoted: m });
   } catch (error) {
