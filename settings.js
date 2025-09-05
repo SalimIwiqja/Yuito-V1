@@ -9,7 +9,7 @@ module.exports = {
     SESSION_ID: process.env.SESSION_ID || "",
     // add your Session Id make sure it starts with suho~
 
-    PREFIX: process.env.PREFIX || "#",
+    PREFIX: process.env.PREFIX || "!",
     // add your prefix for bot
 
     BOT_NAME: process.env.BOT_NAME || "Yuito",
