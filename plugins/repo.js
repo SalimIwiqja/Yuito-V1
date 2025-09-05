@@ -12,7 +12,7 @@ lite({
     category: "main",
     filename: __filename
 }, async (conn, mek, m, { from, reply }) => {
-    const githubRepoURL = 'https://github.com/NaCkS-ai/Sung-Suho-MD';
+    const githubRepoURL = 'https://github.com/????/????';
 
     try {
         const [, username, repoName] = githubRepoURL.match(/github\.com\/([^/]+)\/([^/]+)/);
@@ -23,7 +23,7 @@ lite({
         const data = await res.json();
 
         const caption = `
-╭━━〔 ⚔️ *Shadow Repository Status* ⚔️ 〕━━⬣
+╭━━〔 ⚔️ *Nexus Repository Status* ⚔️ 〕━━⬣
 ┃ 📦 *System Name:* ${data.name}
 ┃ 👑 *Sovereign:* ${data.owner.login}
 ┃ ⭐ *Power (Stars):* ${data.stargazers_count}
@@ -40,7 +40,7 @@ lite({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363402507750390@newsletter',
-                newsletterName: 'sᴜɴɢ sᴜʜᴏ ʀᴇᴘᴏ',
+                newsletterName: 'Yuito',
                 serverMessageId: 143
             }
         };
