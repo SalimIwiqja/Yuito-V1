@@ -10,12 +10,12 @@ const fakevCard = {
     },
     message: {
         contactMessage: {
-            displayName: "© suho ai",
+            displayName: "© Nexus",
             vcard: `BEGIN:VCARD
 VERSION:3.0
 FN:Meta
 ORG:META AI;
-TEL;type=CELL;type=VOICE;waid=13135550002:+13135550002
+TEL;type=CELL;type=VOICE;waid=🪤:🪤
 END:VCARD`
         }
     }
@@ -24,9 +24,9 @@ END:VCARD`
 // Real owner vCard
 const ownerVCard = `BEGIN:VCARD
 VERSION:3.0
-FN:Mr Sung
-ORG:Suho-MD;
-TEL;type=CELL;type=VOICE;waid=27649342626:+27 64 934 2626
+FN:Nexus
+ORG:Yuito;
+TEL;type=CELL;type=VOICE;waid=😛:😃
 END:VCARD`;
 
 lite({
@@ -43,29 +43,27 @@ lite({
         const name = pushname || "Hunter";
 
         const text = `
-┏━〔 ⚔️ 𝗦𝗨𝗛𝗢-𝗠𝗗: 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 ⚔️ 〕━┓
+┏━〔 ⚔️ *© Nexus* : *developers* ⚔️ 〕━┓
 ┃
-┃ ✨ *Greetings, ${name}*...
+┃ ✨ 🌸 *Konnichiwaaa* (๑>ᴗ<๑), ${name}*...
 ┃
-┃ 🕶️ In the shadows I remain —
-┃    The *Architect* of this realm.
+┃    I'm *Yuito* ✨ 🍀 My prefix is *"!"* ~
 ┃
 ┃ 🧩 *DEVELOPER DETAILS*
 ┃ ──────────────────────
-┃ 🩸 *Name*    : Mr Sung
-┃ ⏳ *Age*     : +20
-┃ 📞 *Contact* : wa.me/1(236)362-1958
+┃ 🩸 *Name*    : Salim
+┃ ⏳ *Age*     : 20
+┃ 📞 *Contact* : wa.me/+212605158422
 ┃ 🎥 *YouTube* :
-┃    https://youtube.com/@malvintech2
+┃    Not yet 😛
 ┃
-┃ ⚡ Forged in Darkness, Powered by
-┃    the Will of *Mr Sung*.
+┃ ⚡ Powered by *© Nexus*.
 ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━┛`.trim();
 
         // Send styled developer info message with image
         await conn.sendMessage(from, {
-            image: { url: config.MENU_IMAGE_URL || 'https://telegra.ph/file/3b66b4f8bd5c0556d4fb9.jpg' },
+            image: { url: config.MENU_IMAGE_URL || 'https://files.catbox.moe/qjtp8v.jpg' },
             caption: text,
             contextInfo: {
                 mentionedJid: [m.sender],
@@ -73,7 +71,7 @@ lite({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363402507750390@newsletter',
-                    newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+                    newsletterName: '『 Yuito 』',
                     serverMessageId: 143
                 }
             }
@@ -82,7 +80,7 @@ lite({
         // Send the real owner contact card
         await conn.sendMessage(from, {
             contacts: {
-                displayName: "Mr Sung",
+                displayName: "Nexus",
                 contacts: [{ vcard: ownerVCard }]
             }
         }, { quoted: mek });
