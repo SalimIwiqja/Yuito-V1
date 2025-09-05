@@ -29,7 +29,7 @@ lite({
         fs.writeFileSync("./lib/ban.json", JSON.stringify([...new Set(banned)], null, 2));
 
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/eeeypw.jpg" },
+            image: { url: "https://files.catbox.moe/qjtp8v.jpg" },
             caption: `⛔ User has been banned from using the bot.`
         }, { quoted: mek });
 
@@ -66,7 +66,7 @@ lite({
         fs.writeFileSync("./lib/ban.json", JSON.stringify(updated, null, 2));
 
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/eeeypw.jpg" },
+            image: { url: "https://files.catbox.moe/qjtp8v.jpg" },
             caption: `✅ User has been unbanned.`
         }, { quoted: mek });
 
@@ -98,7 +98,7 @@ lite({
         });
 
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/eeeypw.jpg" },
+            image: { url: "https://files.catbox.moe/qjtp8v.jpg" },
             caption: msg
         }, { quoted: mek });
     } catch (err) {
