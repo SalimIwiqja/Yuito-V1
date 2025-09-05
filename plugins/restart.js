@@ -5,7 +5,7 @@ const path = require("path");
 
 lite({
   pattern: "restart",
-  desc: "Restart SUHO-XD",
+  desc: "Restart Yuito",
   react: "🔄",
   category: "owner",
   filename: __filename
@@ -18,7 +18,7 @@ lite({
     sender: m.sender
   }));
 
-  await reply("♻️ Restarting SUHO-XD...\nYou'll be notified when it comes back online.");
+  await reply("♻️ Restarting Yuito...\nYou'll be notified when it comes back online.");
   await sleep(1000);
   require("child_process").exec("pm2 restart all");
 });
