@@ -29,7 +29,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.ADMIN_EVENTS = "false";
         return reply("❌ Admin event notifications are now disabled.");
     } else {
-        return reply(`Example: .admin-events on`);
+        return reply(`Example: !admin-events on`);
     }
 });
 
@@ -52,7 +52,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
         config.FAKE_TYPING = "false";
         return reply("fake typing is now disabled.");
     } else {
-        return reply(`Example: .faketyping on`);
+        return reply(`Example: !faketyping on`);
     }
 });
 
@@ -79,7 +79,7 @@ async (conn, mek, m, { from, args, isOwner, reply }) => {
         config.FAKE_RECORDING = "false";
         return reply("fake recording of status is now disabled.");
     } else {
-        return reply(`Example: .fakerecording on`);
+        return reply(`Example: !fakerecording on`);
     }
 });
 
@@ -101,7 +101,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.WELCOME = "false";
         return reply("❌ Welcome messages are now disabled.");
     } else {
-        return reply(`Example: .welcome on`);
+        return reply(`Example: !welcome on`);
     }
 });
 
@@ -118,7 +118,7 @@ lite({
 
     // Si aucun argument n'est fourni, afficher le mode actuel et l'usage
     if (!args[0]) {
-        return reply(`📌 Current mode: *${config.MODE}*\n\nUsage: .mode private OR .mode public`);
+        return reply(`📌 Current mode: *${config.MODE}*\n\nUsage: !mode private OR !mode public`);
     }
 
     const modeArg = args[0].toLowerCase();
@@ -130,7 +130,7 @@ lite({
         config.MODE = "public";
         return reply("✅ Bot mode is now set to *PUBLIC*.");
     } else {
-        return reply("❌ Invalid mode. Please use `.mode private` or `.mode public`.");
+        return reply("❌ Invalid mode. Please use `!mode private` or `!mode public`.");
     }
 });
 
@@ -145,7 +145,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
 
     const status = args[0]?.toLowerCase();
     if (!["on", "off"].includes(status)) {
-        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ:  .ᴀᴜᴛᴏ-ᴛʏᴘɪɴɢ ᴏɴ*");
+        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ:  !ᴀᴜᴛᴏ-ᴛʏᴘɪɴɢ ᴏɴ*");
     }
 
     config.AUTO_TYPING = status === "on" ? "true" : "false";
@@ -174,7 +174,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.MENTION_REPLY = "false";
         return reply("Mention Reply feature is now disabled.");
     } else {
-        return reply(`_example:  .mee on_`);
+        return reply(`_example:  !mee on_`);
     }
 });
 
@@ -200,7 +200,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.ALWAYS_ONLINE = "false";
         await reply("*❌ always online mode is now disabled.*");
     } else {
-        await reply(`*🛠️ ᴇxᴀᴍᴘʟᴇ: .ᴀʟᴡᴀʏs-ᴏɴʟɪɴᴇ ᴏɴ*`);
+        await reply(`*🛠️ ᴇxᴀᴍᴘʟᴇ: !ᴀʟᴡᴀʏs-ᴏɴʟɪɴᴇ ᴏɴ*`);
     }
 });
 
@@ -219,7 +219,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
 
     const status = args[0]?.toLowerCase();
     if (!["on", "off"].includes(status)) {
-        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ: .ᴀᴜᴛᴏ-ʀᴇᴄᴏʀᴅɪɴɢ ᴏɴ*");
+        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ: !ᴀᴜᴛᴏ-ʀᴇᴄᴏʀᴅɪɴɢ ᴏɴ*");
     }
 
     config.AUTO_RECORDING = status === "on" ? "true" : "false";
@@ -253,7 +253,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_STATUS_SEEN = "false";
         return reply("Auto-viewing of statuses is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  .ᴀᴜᴛᴏ-sᴇᴇɴ ᴏɴ*`);
+        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  !ᴀᴜᴛᴏ-sᴇᴇɴ ᴏɴ*`);
     }
 }); 
 //--------------------------------------------
@@ -278,7 +278,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_STATUS_REACT = "false";
         return reply("Auto-liking of statuses is now disabled.");
     } else {
-        return reply(`Example: . status-react on`);
+        return reply(`Example: !status-react on`);
     }
 });
 
@@ -304,7 +304,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.READ_MESSAGE = "false";
         return reply("readmessage feature is now disabled.");
     } else {
-        return reply(`_example:  .readmessage on_`);
+        return reply(`_example:  !readmessage on_`);
     }
 });
 
@@ -329,7 +329,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_VOICE = "false";
         return reply("AUTO_VOICE feature is now disabled.");
     } else {
-        return reply(`_example:  .autovoice on_`);
+        return reply(`_example:  !autovoice on_`);
     }
 });
 
@@ -356,7 +356,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.ANTI_BAD_WORD = "false";
         return reply("*anti bad word feature is now disabled*");
     } else {
-        return reply(`_example:  .antibad on_`);
+        return reply(`_example:  !antibad on_`);
     }
 });
 //--------------------------------------------
@@ -381,7 +381,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_STICKER = "false";
         return reply("auto-sticker feature is now disabled.");
     } else {
-        return reply(`_example:  .auto-sticker on_`);
+        return reply(`_example:  !auto-sticker on_`);
     }
 });
 //--------------------------------------------
@@ -406,7 +406,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_REPLY = "false";
         return reply("auto-reply feature is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: . ᴀᴜᴛᴏ-ʀᴇᴘʟʏ ᴏɴ*`);
+        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: !ᴀᴜᴛᴏ-ʀᴇᴘʟʏ ᴏɴ*`);
     }
 });
 
@@ -432,7 +432,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_REACT = "false";
         await reply("autoreact feature is now disabled.");
     } else {
-        await reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: .ᴀᴜᴛᴏ-ʀᴇᴀᴄᴛ ᴏɴ*`);
+        await reply(`*🫟 ᴇxᴀᴍᴘʟᴇ: !ᴀᴜᴛᴏ-ʀᴇᴀᴄᴛ ᴏɴ*`);
     }
 });
 //--------------------------------------------
@@ -457,7 +457,7 @@ async (conn, mek, m, { from, args, isCreator, reply }) => {
         config.AUTO_STATUS_REPLY = "false";
         return reply("status-reply feature is now disabled.");
     } else {
-        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  .sᴛᴀᴛᴜs-ʀᴇᴘʟʏ ᴏɴ*`);
+        return reply(`*🫟 ᴇxᴀᴍᴘʟᴇ:  !sᴛᴀᴛᴜs-ʀᴇᴘʟʏ ᴏɴ*`);
     }
 });
 
@@ -485,7 +485,7 @@ lite({
       config.ANTI_LINK = "false";
       reply("❌ ANTI_LINK has been disabled.");
     } else {
-      reply("Usage: *.antilink on/off*");
+      reply("Usage: *!antilink on/off*");
     }
   } catch (e) {
     reply(`Error: ${e.message}`);
@@ -512,7 +512,7 @@ lite({
       config.ANTI_LINK_KICK = "false";
       reply("❌ ANTI_LINK_KICK has been disabled.");
     } else {
-      reply("Usage: *.antilinkkick on/off*");
+      reply("Usage: *!antilinkkick on/off*");
     }
   } catch (e) {
     reply(`Error: ${e.message}`);
@@ -540,7 +540,7 @@ lite({
       config.DELETE_LINKS = "false";
       reply("❌ DELETE_LINKS is now disabled.");
     } else {
-      reply("Usage: *.deletelink on/off*");
+      reply("Usage: *!deletelink on/off*");
     }
   } catch (e) {
     reply(`Error: ${e.message}`);
@@ -560,7 +560,7 @@ lite({
 
     const cmdList = `
     ----------------------------------------
-        MALVIN XD V3 SETTINGS 
+        YUITO BOT SETTINGS 
     -----------------------------------------
  
 🔧 *1. Mode*
@@ -671,7 +671,7 @@ lite({
         config.HEART_REACT = "false"; // Set to "false" for disabling
         return reply("💔 Heart react is now disabled.");
     } else {
-        return reply("*🔥 Example: .heartreact on* or *[.heartreact off]*");
+        return reply("*🔥 Example: .heartreact on* or *[!heartreact off]*");
     }
 });
 
@@ -691,7 +691,7 @@ lite({
         antibotAction = action;
         return reply(`*Antibot action set to:* ${action.toUpperCase()}`);
     } else {
-        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ: . ᴀɴᴛɪʙᴏᴛ ᴏғғ/ᴡᴀʀɴ/ᴅᴇʟᴇᴛᴇ/ᴋɪᴄᴋ*");
+        return reply("*🫟 ᴇxᴀᴍᴘʟᴇ: !ᴀɴᴛɪʙᴏᴛ ᴏғғ/ᴡᴀʀɴ/ᴅᴇʟᴇᴛᴇ/ᴋɪᴄᴋ*");
     }
 });
 
