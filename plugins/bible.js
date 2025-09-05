@@ -14,7 +14,7 @@ lite({
     try {
         // Check if a reference is provided
         if (args.length === 0) {
-            return reply(`⚠️ *Please provide a Bible reference.*\n\n📝 *Example:*\n.bible John 1:1`);
+            return reply(`⚠️ *Please provide a Bible reference.*\n\n📝 *Example:*\n!bible John 1:1`);
         }
 
         // Join the arguments to form the reference
