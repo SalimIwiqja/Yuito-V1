@@ -15,7 +15,7 @@ async (conn, mek, m, { from, reply, text, isCreator }) => {
         const currentStatus = await getAnti();
         
         if (!text || text.toLowerCase() === 'status') {
-            return reply(`*AntiDelete Status:* ${currentStatus ? '✅ ON' : '❌ OFF'}\n\nUsage:\n• .antidelete on - Enable\n• .antidelete off - Disable`);
+            return reply(`*AntiDelete Status:* ${currentStatus ? '✅ ON' : '❌ OFF'}\n\nUsage:\n• !antidelete on - Enable\n• .antidelete off - Disable`);
         }
         
         const action = text.toLowerCase().trim();
