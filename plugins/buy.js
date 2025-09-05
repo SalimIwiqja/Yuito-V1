@@ -16,7 +16,7 @@ lite({
     filename: __filename
 }, async (conn, mek, m, { from, text, reply }) => {
 
-    if (!text) return reply("❌ Please enter the item ID to buy. Example: .buy 1");
+    if (!text) return reply("❌ Please enter the item ID to buy. Example: !buy 1");
 
     const itemId = text.trim();
 
