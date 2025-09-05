@@ -27,7 +27,7 @@ lite({
 
   const newPrefix = args[0];
 
-  if (!newPrefix) return reply("❌ Provide new prefix. Example: `.setprefix !`");
+  if (!newPrefix) return reply("❌ Provide new prefix. Example: `!setprefix !`");
 
   setPrefix(newPrefix); // updates without reboot
 
