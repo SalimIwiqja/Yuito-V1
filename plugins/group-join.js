@@ -8,7 +8,7 @@ lite({
     alias: ["joinme", "f_join"],
     desc: "To Join a Group from Invite link",
     category: "group",
-    use: '.join < Group Link >',
+    use: '!join < Group Link >',
     filename: __filename
 }, async (conn, mek, m, { from, l, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isCreator, isDev, isAdmins, reply }) => {
     try {
