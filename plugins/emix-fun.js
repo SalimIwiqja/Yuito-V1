@@ -8,12 +8,12 @@ lite({
     desc: "Combine two emojis into a sticker.",
     category: "fun",
     react: "😃",
-    use: ".emix 😂,🙂",
+    use: "!emix 😂,🙂",
     filename: __filename,
 }, async (conn, mek, m, { args, q, reply }) => {
     try {
         if (!q.includes(",")) {
-            return reply("❌ *Usage:* .emix 😂,🙂\n_Send two emojis separated by a comma._");
+            return reply("❌ *Usage:* !emix 😂,🙂\n_Send two emojis separated by a comma._");
         }
 
         let [emoji1, emoji2] = q.split(",").map(e => e.trim());
@@ -30,8 +30,8 @@ lite({
 
         let buffer = await getBuffer(imageUrl);
         let sticker = new Sticker(buffer, {
-            pack: "Emoji Mix",
-            author: "ᴍᴀʟᴠɪɴ xᴅ",
+            pack: "©️ Nexus",
+            author: "Yuito",
             type: StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             quality: 75,
