@@ -12,7 +12,7 @@ lite({
     react: "📲",
     desc: "Download YouTube song or video",
     category: "download",
-    use: '.play <song name or YouTube URL>',
+    use: '!play <song name or YouTube URL>',
     filename: __filename
 }, async (conn, mek, m, { from, reply, q }) => {
     try {
@@ -63,7 +63,7 @@ lite({
                                 document: { url: outputPath },
                                 mimetype: 'audio/mp3',
                                 fileName: `${title}.mp3`,
-                                caption: `🎶 *Title:* ${vid.title}\n⏱️ *Duration:* ${duration}\n\n> Powered by Malvin`,
+                                caption: `🎶 *Title:* ${vid.title}\n⏱️ *Duration:* ${duration}\n\n> Powered by Nexus ,
                                 thumbnail: { url: thumbnail }
                             }, { quoted: mek });
                             fs.unlinkSync(outputPath);
