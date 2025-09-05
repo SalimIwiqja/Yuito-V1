@@ -14,7 +14,7 @@ lite({
     // Check if the user provided an app name
     const appName = args.join(" ");
     if (!appName) {
-      return reply('Please provide an app name. Example: `.apk whatsapp `');
+      return reply('Please provide an app name. Example: `!apk whatsapp `');
     }
 
     // Add a reaction to indicate processing
@@ -48,7 +48,7 @@ lite({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: '『『 sᴜʜᴏ ᴍᴅ 』』',
+          newsletterName: '『『 Nexus Inc 』』',
           serverMessageId: 143
         }
       }
@@ -69,7 +69,7 @@ lite({
       `📅 *Lᴀsᴛ ᴜᴘᴅᴀᴛᴇ*: ${lastup}\n` +
       `📦 *Pᴀᴄᴋᴀɢᴇ*: ${package}\n` +
       `📏 *Sɪᴢᴇ*: ${size}\n\n` +
-      `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ `;
+      `> © Powered By Nexus Inc`;
 
     // Send the APK file as a document
     await conn.sendMessage(from, {
@@ -83,7 +83,7 @@ lite({
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: '『 sᴜʜᴏ ᴍᴅ 』 ',
+          newsletterName: '『 Nexus Inc 』 ',
           serverMessageId: 143
         }
       }
