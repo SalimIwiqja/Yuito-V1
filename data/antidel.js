@@ -1,5 +1,4 @@
 const { lite } = require('../lite');
-const { getAnti, setAnti } = require('../plugins/anti-delete'); // import database logic
 
 // Command definition
 lite({
@@ -10,14 +9,15 @@ lite({
     filename: __filename
 },
 async (conn, mek, m, { from, reply, text, isCreator }) => {
-    // Only the bot owner can use this command
     if (!isCreator) return reply('❌ This command is only for the bot owner.');
 
     try {
+        // Lazy import to avoid circular dependency warnings
+        const { getAnti, setAnti } = require('../plugins/anti-delete');
+
         // Get the current anti-delete status
         const currentStatus = await getAnti();
 
-        // Show status if no argument or "status"
         if (!text || text.toLowerCase() === 'status') {
             return reply(
                 `*AntiDelete Status:* ${currentStatus ? '✅ ON' : '❌ OFF'}\n\nUsage:\n` +
@@ -26,7 +26,6 @@ async (conn, mek, m, { from, reply, text, isCreator }) => {
             );
         }
 
-        // Handle user input
         const action = text.toLowerCase().trim();
 
         if (action === 'on') {
