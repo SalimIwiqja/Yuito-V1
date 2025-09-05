@@ -17,9 +17,9 @@ lite({
         const uptime = runtime(process.uptime());
 
         const caption = `
-┏━━━━━ ⚔️ 〔 *SHADOW SYSTEM ONLINE* 〕 ⚔️ ━━━━━┓
+┏━━━━━ ⚔️ 〔 *NEXUS SYSTEM IS ONLINE* 〕 ⚔️ ━━━━━┓
 ┃
-┃ 🖤 *Monarch:* ${config.OWNER_NAME}
+┃ ❤️ *Monarch:* ${config.OWNER_NAME}
 ┃ 📜 *Version:* ${config.version}
 ┃ 🌓 *Prefix:* [ ${config.PREFIX} ]
 ┃ 🌌 *Mode:* [ ${config.MODE} ]
@@ -40,7 +40,7 @@ lite({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363398430045533@newsletter',
-                    newsletterName: 'sᴜɴɢ sᴜʜᴏ ᴍᴅ',
+                    newsletterName: 'Nexus',
                     serverMessageId: 143
                 }
             }
