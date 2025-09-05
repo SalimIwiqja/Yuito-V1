@@ -8,7 +8,7 @@ lite({
     alias: ["gc_tagadmins"],
     desc: "To Tag all Admins of the Group",
     category: "group",
-    use: '.tagadmins [message]',
+    use: '!tagadmins [message]',
     filename: __filename
 },
 async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAdmins, prefix, command, args, body }) => {
