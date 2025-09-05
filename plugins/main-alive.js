@@ -4,8 +4,8 @@ const { runtime } = require('../lib/functions');
 const config = require('../settings');
 
 lite({
-    pattern: "arise",
-    alias: ["status", "online", "arise"],
+    pattern: "alive",
+    alias: ["status", "online", "alive"],
     desc: "Check if bot is alive and running",
     category: "main",
     react: "👁️",
