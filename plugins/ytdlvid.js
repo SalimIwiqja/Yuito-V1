@@ -11,7 +11,7 @@ lite({
     react: "📽",
     desc: "Download YouTube video (MP4)",
     category: "download",
-    use: ".video <query>",
+    use: "!video <query>",
     filename: __filename
 }, async (conn, mek, m, { from, reply, q }) => {
     try {
@@ -45,7 +45,7 @@ lite({
 
         await conn.sendMessage(from, {
             image: { url: thumbnail },
-            caption: `🎬 *Video Found:*\n\n📌 *Title:* ${title}\n⏱️ *Duration:* ${timestamp}\n🔗 *Link:* ${url}\n\n> Powered by Malvin`
+            caption: `🎬 *Video Found:*\n\n📌 *Title:* ${title}\n⏱️ *Duration:* ${timestamp}\n🔗 *Link:* ${url}\n\n> Powered by Nexus`
         }, { quoted: mek });
 
         await conn.sendMessage(from, {
