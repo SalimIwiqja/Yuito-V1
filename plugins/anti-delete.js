@@ -15,7 +15,7 @@ async (conn, mek, m, { from, reply, text, isCreator }) => {
         const currentStatus = await getAnti();
         
         if (!text || text.toLowerCase() === 'status') {
-            return reply(`*AntiDelete Status:* ${currentStatus ? '✅ ON' : '❌ OFF'}\n\nUsage:\n• !antidelete on - Enable\n• .antidelete off - Disable`);
+            return reply(`*AntiDelete Status:* ${currentStatus ? '✅ ON' : '❌ OFF'}\n\nUsage:\n• !antidelete on - Enable\n• !antidelete off - Disable`);
         }
         
         const action = text.toLowerCase().trim();
@@ -29,7 +29,7 @@ async (conn, mek, m, { from, reply, text, isCreator }) => {
             return reply('❌ Anti-delete has been disabled');
         } 
         else {
-            return reply('Invalid command. Usage:\n• .antidelete on\n• .antidelete off\n• .antidelete status');
+            return reply('Invalid command. Usage:\n• !antidelete on\n• !antidelete off\n• !antidelete status');
         }
     } catch (e) {
         console.error("Error in antidelete command:", e);
