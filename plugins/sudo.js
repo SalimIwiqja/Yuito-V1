@@ -42,7 +42,7 @@ lite({
 
         const successMsg = "✅ Successfully Added User As Temporary Owner";
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/eeeypw.jpg" },
+            image: { url: "https://files.catbox.moe/qjtp8v.jpg" },
             caption: successMsg
         }, { quoted: mek });
     } catch (err) {
@@ -80,7 +80,7 @@ lite({
 
         const successMsg = "✅ Successfully Removed User As Temporary Owner";
         await conn.sendMessage(from, {
-            image: { url: "https://files.catbox.moe/eeeypw.jpg" },
+            image: { url: "https://files.catbox.moe/qjtp8v.jpg" },
             caption: successMsg
         }, { quoted: mek });
     } catch (err) {
