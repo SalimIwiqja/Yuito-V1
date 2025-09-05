@@ -7,7 +7,7 @@ lite({
   react: "🔊",
   desc: "To Tag all Members for Any Message/Media",
   category: "group",
-  use: '.hidetag Hello',
+  use: '!hidetag Hello',
   filename: __filename
 },
 async (conn, mek, m, {
