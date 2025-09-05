@@ -7,14 +7,14 @@ lite({
   react: '📥',
   desc: "Download Instagram posts (images or videos).",
   category: "download",
-  use: ".igdl <Instagram post URL>",
+  use: "!igdl <Instagram post URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args }) => {
   try {
     // Check if the user provided an Instagram URL
     const igUrl = args[0];
     if (!igUrl || !igUrl.includes("instagram.com")) {
-      return reply('Please provide a valid Instagram post URL. Example: `.igdl https://instagram.com/...`');
+      return reply('Please provide a valid Instagram post URL. Example: `!igdl https://instagram.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -55,14 +55,14 @@ lite({
             `❤️ *Likes*: ${like}\n` +
             `💬 *Comments*: ${comment}\n` +
             `📝 *Caption*: ${caption || "No caption"}\n\n` +
-            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+            `> © Powered By Nexus`,
           contextInfo: {
             mentionedJid: [m.sender],
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: '120363402507750390@newsletter',
-              newsletterName: '『 ᴍᴀʟᴠɪɴ-xᴅ 』',
+              newsletterName: '『 Nexus Inc 』',
               serverMessageId: 143
             }
           }
@@ -76,14 +76,14 @@ lite({
             `❤️ *Likes*: ${like}\n` +
             `💬 *Comments*: ${comment}\n` +
             `📝 *Caption*: ${caption || "No caption"}\n\n` +
-            `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+            `> © Powerd By Nexus`,
           contextInfo: {
             mentionedJid: [m.sender],
             forwardingScore: 999,
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
               newsletterJid: '120363402507750390@newsletter',
-              newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+              newsletterName: '『 Nexus Inc 』',
               serverMessageId: 143
             }
           }
@@ -110,14 +110,14 @@ lite({
   react: '📥',
   desc: "Download Instagram videos.",
   category: "download",
-  use: ".igvid <Instagram video URL>",
+  use: "!igvid <Instagram video URL>",
   filename: __filename
 }, async (conn, mek, m, { from, reply, args }) => {
   try {
     // Check if the user provided an Instagram video URL
     const igUrl = args[0];
     if (!igUrl || !igUrl.includes("instagram.com")) {
-      return reply('Please provide a valid Instagram video URL. Example: `.igvid https://instagram.com/...`');
+      return reply('Please provide a valid Instagram video URL. Example: `!igvid https://instagram.com/...`');
     }
 
     // Add a reaction to indicate processing
@@ -157,14 +157,14 @@ lite({
       video: videoBuffer,
       caption: `📥 *Instagram Video*\n\n` +
         `🔖 *Title*: ${title || "No title"}\n\n` +
-        `> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ`,
+        `> © Powerd By Nexus`,
       contextInfo: {
         mentionedJid: [m.sender],
         forwardingScore: 999,
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
           newsletterJid: '120363402507750390@newsletter',
-          newsletterName: '『 sᴜʜᴏ ᴍᴅ 』',
+          newsletterName: '『 Nexus Inc 』',
           serverMessageId: 143
         }
       }
