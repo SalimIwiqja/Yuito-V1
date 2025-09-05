@@ -34,7 +34,7 @@ lite({
 
     const { desc, thumb, video_sd, video_hd } = data.result;
 
-    const caption = `╭━━━〔 *sᴜʜᴏ-ᴍᴅ ᴛᴡɪᴛᴛᴇʀ ᴅʟ* 〕━━━⊷\n`
+    const caption = `╭━━━〔 *Nexus Twitter Downloader* 〕━━━⊷\n`
       + `┃▸ *Dᴜʀᴀᴛɪᴏɴ*: ${fbData.result.duration}\n`
       + `╰━━━⪼\n\n`
       + `🌐 *Download Options:*\n`
