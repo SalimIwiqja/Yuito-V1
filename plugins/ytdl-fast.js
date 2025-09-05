@@ -63,7 +63,7 @@ lite({
                                 document: { url: outputPath },
                                 mimetype: 'audio/mp3',
                                 fileName: `${title}.mp3`,
-                                caption: `🎶 *Title:* ${vid.title}\n⏱️ *Duration:* ${duration}\n\n> Powered by Nexus ,
+                                caption: `🎶 *Title:* ${vid.title}\n⏱️ *Duration:* ${duration}\n\n> Powered by Nexus` ,
                                 thumbnail: { url: thumbnail }
                             }, { quoted: mek });
                             fs.unlinkSync(outputPath);
