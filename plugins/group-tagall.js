@@ -8,7 +8,7 @@ lite({
     alias: ["gc_tagall"],
     desc: "To Tag all Members",
     category: "group",
-    use: '.tagall [message]',
+    use: '!tagall [message]',
     filename: __filename
 },
 async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAdmins, prefix, command, args, body }) => {
@@ -44,7 +44,7 @@ async (conn, mek, m, { from, participants, reply, isGroup, senderNumber, groupAd
             teks += `${randomEmoji} @${mem.id.split('@')[0]}\n`;
         }
 
-        teks += "└──✪ SUHO ┃ MD ✪──";
+        teks += "└── Nexus ┃ Inc ──";
 
         conn.sendMessage(from, { text: teks, mentions: participants.map(a => a.id) }, { quoted: mek });
 
