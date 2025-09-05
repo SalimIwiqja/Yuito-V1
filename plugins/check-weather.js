@@ -10,7 +10,7 @@ lite({
 },
 async (conn, mek, m, { from, q, reply }) => {
     try {
-        if (!q) return reply("❗ Please provide a city name. Usage: .weather [city name]");
+        if (!q) return reply("❗ Please provide a city name. Usage: !weather [city name]");
         const apiKey = '2d61a72574c11c4f36173b627f8cb177'; 
         const city = q;
         const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
