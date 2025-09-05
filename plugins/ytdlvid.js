@@ -51,7 +51,7 @@ lite({
         await conn.sendMessage(from, {
             video: { url: downloadUrl },
             mimetype: "video/mp4",
-            caption: `🎬 *Video Downloaded Successfully!*\n\n> Powered by Suho MD`
+            caption: `🎬 *Video Downloaded Successfully!*\n\n> Powered by Nexus`
         }, { quoted: mek });
 
     } catch (error) {
