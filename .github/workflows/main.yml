@@ -1,21 +1,14 @@
-name: Node.js Bot
+name: Run WhatsApp Bot
 
 on:
   push:
     branches:
       - main
-  pull_request:
-    branches:
-      - main
-  workflow_dispatch:   # allows manual triggering from GitHub Actions tab
+  workflow_dispatch:
 
 jobs:
-  build:
+  bot:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20.x]
 
     steps:
       - name: Checkout repository
@@ -24,10 +17,15 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 20
 
       - name: Install dependencies
         run: npm install
 
-      - name: Start application
+      - name: Create config.env with session
+        run: |
+          echo "SESSION_ID=${{ secrets.SESSION_ID }}" > config.env
+        shell: bash
+
+      - name: Start bot
         run: npm start
