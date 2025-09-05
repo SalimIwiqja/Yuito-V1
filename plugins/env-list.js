@@ -49,7 +49,7 @@ lite({
     try {
         // Generate the formatted settings message with emojis
         const settingsMessage = `
-╭━━━〔 *SUHO MD SETTINGS* 〕━━━┈⊷
+╭━━━〔 *YUITO SETTINGS* 〕━━━┈⊷
 ┃ *📌 Current Configurations:*
 ┃        ─────────
 ${generateSettingsList()}
@@ -70,7 +70,7 @@ ${generateSettingsList()}
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363402507750390@newsletter',
-                    newsletterName: "Sung Suho MD",
+                    newsletterName: "Nexus Inc",
                     serverMessageId: 143
                 }
             }
