@@ -10,7 +10,7 @@ const shopFile = './data/shop.json';
 lite({
     pattern: "buy",
     alias: [],
-    desc: "Buy an item from the shop. Usage: .buy <item_id>",
+    desc: "Buy an item from the shop. Usage: !buy <item_id>",
     category: "economy",
     react: "💳",
     filename: __filename
