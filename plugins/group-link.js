@@ -39,7 +39,7 @@ lite({
         const inviteLink = `https://chat.whatsapp.com/${inviteCode}`;
 
         // Reply with the invite link
-        return reply(`*Here is your group invite link:*\n${inviteLink} \n\n > Powered by Malvin King `);
+        return reply(`*Here is your group invite link:*\n${inviteLink} \n\n > Powered by Nexus `);
         
     } catch (error) {
         console.error("Error in invite command:", error);
