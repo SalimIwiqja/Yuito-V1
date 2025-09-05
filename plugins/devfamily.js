@@ -20,29 +20,20 @@ lite({
 │ 📱 *Owner Number:* ${config.OWNER_NUMBER}
 │
 │ 👑 *Close Fam & Friends:*
-│    • 🕶️ Dev Sung (Dev)
-│    • 🤝 kelvin (Friend)
-│    • 🎵 sung3 (Cousin)
-│    • 💻 anouk (Sis)
-│    • 🐉 dev malvin (Bro)
-│    • 🌸 sung2 (Bestie)
+│    • 🕶️ dev Imad (dev)
 │
 ╰───────────────────────────╯
 `;
 
     const buttons = [
         { buttonId: "v_owner", buttonText: { displayText: "👑 Owner" }, type: 1 },
-        { buttonId: "v_friend", buttonText: { displayText: "🤝 kelvin" }, type: 1 },
-        { buttonId: "v_cousin", buttonText: { displayText: "🎵 sung3" }, type: 1 },
-        { buttonId: "v_sis", buttonText: { displayText: "💻 anouk" }, type: 1 },
-        { buttonId: "v_bro", buttonText: { displayText: "🐉 dev malvin" }, type: 1 },
-        { buttonId: "v_bestie", buttonText: { displayText: "🌸 sung2" }, type: 1 },
+        { buttonId: "v_friend", buttonText: { displayText: "🤝 Imad" }, type: 1 },
         { buttonId: "back_menu", buttonText: { displayText: "🏠 Back to Main" }, type: 1 }
     ];
 
     const buttonMessage = {
         text: familyList,
-        footer: "💠 Powered by Sung-Suho-MD",
+        footer: "💠 Powered by Nexus",
         buttons: buttons,
         headerType: 4
     };
@@ -59,24 +50,8 @@ const familyVCards = {
         number: config.OWNER_NUMBER
     },
     v_friend: {
-        name: "dev kelvin",
-        number: "256742932677"
-    },
-    v_cousin: {
-        name: "dev sung3",
-        number: "12363621958"
-    },
-    v_sis: {
-        name: "anouk",
-        number: "27798195218"
-    },
-    v_bro: {
-        name: "dev malvin",
-        number: "263776388689"
-    },
-    v_bestie: {
-        name: "dev sung2",
-        number: "254762876275"
+        name: "dev imad",
+        number: "212667876859"
     }
 };
 
