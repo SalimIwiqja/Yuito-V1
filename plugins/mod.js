@@ -20,23 +20,23 @@ lite({
 │ 📱 *Owner Number:* ${config.OWNER_NUMBER}
 │
 │ 🔹 *Moderators List:*
-│    • ⚡ Malvin (Main Mod)
-│    • 🌀 sung (Group Mod)
-│    • 🔥 Kelvin (Event Mod)
+│    • Salim (Creator)
+│   contact: wa.me/+212605158422
+│    • Imad (Main Mod)
+│   contact: wa.me/+212667876859
 │
 ╰───────────────────────────╯
 `;
 
     const buttons = [
-        { buttonId: "v_malvin", buttonText: { displayText: "⚡ Malvin" }, type: 1 },
-        { buttonId: "v_sung", buttonText: { displayText: "🌀 Sung" }, type: 1 },
-        { buttonId: "v_kelvin", buttonText: { displayText: "🔥 Kelvin" }, type: 1 },
+        { buttonId: "v_malvin", buttonText: { displayText: "Salim" }, type: 1 },
+        { buttonId: "v_sung", buttonText: { displayText: "Imad" }, type: 1 },
         { buttonId: "back_menu", buttonText: { displayText: "🏠 Back to Main" }, type: 1 }
     ];
 
     const buttonMessage = {
         text: modList,
-        footer: "💠 Powered by Sung-Suho-MD",
+        footer: "💠 Powered by Nexus !",
         buttons: buttons,
         headerType: 4
     };
@@ -48,9 +48,8 @@ lite({
 // Moderator vCards
 // ────────────────────────────────
 const modsVCards = {
-    v_malvin: { name: "Malvin", number: "263776388689" },
-    v_sung: { name: "Sung", number: "27649342626" },
-    v_kelvin: { name: "kelvin", number: "256742932677" }
+    v_malvin: { name: "Salim", number: "212605158422" },
+    v_sung: { name: "Imad", number: "212667876859" }
 };
 
 for (const key in modsVCards) {
