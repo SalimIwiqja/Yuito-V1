@@ -20,7 +20,7 @@ lite({
   react: '📸',
   desc: "Scan and remove bg from images",
   category: "img_edit",
-  use: ".rmbg [reply to image]",
+  use: "!rmbg [reply to image]",
   filename: __filename
 }, async (conn, message, m,  { reply, mek }) => {
   try {
@@ -75,7 +75,7 @@ lite({
 
     await conn.sendMessage(m.chat, {
       image: imageBuffer,
-      caption: `Background removed\n\n> *Powered by ᴍᴀʟᴠɪɴ-xᴅ*`
+      caption: `Background removed\n\n> *Powerd By Nexus*`
     });
 
   } catch (error) {
