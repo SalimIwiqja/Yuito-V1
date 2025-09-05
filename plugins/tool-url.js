@@ -65,7 +65,7 @@ lite({
       `*${mediaType} Uploaded Successfully*\n\n` +
       `*Size:* ${formatBytes(mediaBuffer.length)}\n` +
       `*URL:* ${mediaUrl}\n\n` +
-      `> © Uploaded by Mr Sung `
+      `> © Uploaded by Yuito`
     );
 
   } catch (error) {
