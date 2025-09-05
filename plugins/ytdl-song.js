@@ -15,7 +15,7 @@ lite({
     react: "🎵",
     desc: "Download Ytmp3",
     category: "download",
-    use: ".song <Text or YT URL>",
+    use: "!song <Text or YT URL>",
     filename: __filename
 }, async (conn, m, mek, { from, q, reply }) => {
     try {
@@ -34,7 +34,7 @@ lite({
 
         const { url, title, image, timestamp, ago, views, author } = data.results[0];
 
-        let info = `🍄 *𝚂𝙾𝙽𝙶 𝙳𝙾𝚆𝙽𝙻𝙾𝙰𝙳𝙴𝚁* 🍄\n\n` +
+        let info = `🍄 *SONG DOWNLOADER* 🍄\n\n` +
             `🎵 *Title:* ${title || "Unknown"}\n` +
             `⏳ *Duration:* ${timestamp || "Unknown"}\n` +
             `👀 *Views:* ${views || "Unknown"}\n` +
@@ -44,7 +44,7 @@ lite({
             `🔽 *Reply with your choice:*\n` +
             `> 1 *Audio Type* 🎵\n` +
             `> 2 *Document Type* 📁\n\n` +
-            `${config.FOOTER || "ʟɪᴛᴇ-xᴅ"}`;
+            `${config.FOOTER || "Nexus Inc"}`;
 
         const sentMsg = await conn.sendMessage(from, { image: { url: image }, caption: info }, { quoted: mek });
         const messageID = sentMsg.key.id;
