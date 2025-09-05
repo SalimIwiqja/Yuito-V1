@@ -5,9 +5,9 @@ lite({
     pattern: "pair",
     alias: ["getpair", "clonebot"],
     react: "✅",
-    desc: "Get pairing code for lite-XD bot",
+    desc: "Get pairing code for a mini bot",
     category: "download",
-    use: ".pair 263714757xxx",
+    use: "!pair 21266787xxxx",
     filename: __filename
 }, async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, senderNumber, reply }) => {
     try {
@@ -16,7 +16,7 @@ lite({
 
         // Validate phone number format
         if (!phoneNumber || phoneNumber.length < 10 || phoneNumber.length > 15) {
-            return await reply("❌ Please provide a valid phone number without `+`\nExample: `.pair 26371475xxx`");
+            return await reply("❌ Please provide a valid phone number without `+`\nExample: `!pair 21266787xxxx`");
         }
 
         // Make API request to get pairing code
@@ -27,7 +27,7 @@ lite({
         }
 
         const pairingCode = response.data.code;
-        const doneMessage = "> *SUHO MD PAIRING COMPLETED*";
+        const doneMessage = "> *YUITO BOT PAIRING COMPLETED*";
 
         // Send initial message with formatting
         await reply(`${doneMessage}\n\n*Your pairing code is:* ${pairingCode}`);
