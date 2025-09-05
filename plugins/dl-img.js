@@ -13,7 +13,7 @@ lite({
     try {
         const query = args.join(" ");
         if (!query) {
-            return reply("🖼️ Please provide a search query\nExample: .img cute cats");
+            return reply("🖼️ Please provide a search query\nExample: !img cute cats");
         }
 
         await reply(`🔍 Searching images for *"${query}"*...`);
@@ -38,7 +38,7 @@ lite({
                     from,
                     {
                         image: { url: imageUrl },
-                        caption: `📷 Result for: *${query}*\n\nRequested by: @${m.sender.split('@')[0]}\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍʀ sᴜɴɢ sᴜʜᴏ`,
+                        caption: `📷 Result for: *${query}*\n\nRequested by: @${m.sender.split('@')[0]}\n> © Powered By Nexus`,
                         contextInfo: { mentionedJid: [m.sender] }
                     },
                     { quoted: mek }
