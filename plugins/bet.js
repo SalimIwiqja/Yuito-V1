@@ -13,13 +13,13 @@ if (!fs.existsSync(dataFile)) fs.writeFileSync(dataFile, JSON.stringify({}));
 lite({
     pattern: "bet",
     alias: ["gamble"],
-    desc: "Bet your coins and try your luck! Usage: .bet <amount>",
+    desc: "Bet your coins and try your luck! Usage: !bet <amount>",
     category: "economy",
     react: "🎲",
     filename: __filename
 }, async (conn, mek, m, { from, text, reply }) => {
 
-    if (!text) return reply("❌ Please enter an amount to bet. Example: .bet 100");
+    if (!text) return reply("❌ Please enter an amount to bet. Example: !bet 100");
 
     let amount = parseInt(text.trim());
     if (isNaN(amount) || amount <= 0) return reply("❌ Invalid amount.");
