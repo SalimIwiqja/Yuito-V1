@@ -81,7 +81,7 @@ lite({
 
     // Send the message with the generated password
     await conn.sendMessage(from, {
-      text: `🔐 *Your Strong Password* 🔐\n\nHere is your generated password (${strength}):\n\n*${generatedPassword}*\n\n> *ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴀʟᴠɪɴ ᴋɪɴɢ*`
+      text: `🔐 *Your Strong Password* 🔐\n\nHere is your generated password (${strength}):\n\n*${generatedPassword}*\n\n> *Powerd By Nexus*`
     }, {
       quoted: quoted
     });
