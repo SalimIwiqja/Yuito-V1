@@ -13,7 +13,7 @@ lite({
     // Input validation
     if (!message.quoted) {
         return await client.sendMessage(from, {
-            text: "✨ *Sticker Converter*\n\nPlease reply to a sticker message\n\nExample: `.convert` (reply to sticker)"
+            text: "✨ *Sticker Converter*\n\nPlease reply to a sticker message\n\nExample: `!convert` (reply to sticker)"
         }, { quoted: message });
     }
 
@@ -35,7 +35,7 @@ lite({
         // Send result
         await client.sendMessage(from, {
             image: imageBuffer,
-            caption: "> XdKing2 is tha best",
+            caption: "> *Nexus Inc* ",
             mimetype: 'image/png'
         }, { quoted: message });
 
